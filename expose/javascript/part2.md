@@ -22,4 +22,17 @@
     - E) true + 3 = 4, true is treated as 1
     - F) false + null = 0, false and null is treated as int which is 0.
     - G) '3' + undefined = "3undefined", undefined is treated as string and concat with "3".
-    - H) '3' - undefined = Nan
+    - H) '3' - undefined = Nan, because '-' only apply to numerals and undefined is Nan. 
+14. - '2' > 1, True '2' convert to 2
+    - '2' < '12', False string comparison '2' > '1' in ascii
+    -  2 == '2' True, convert value to 2
+    -  2 === '2' False, type not equal
+    -  true == 2, False, true becomes 1.  
+    -  true == Boolean(2), True, Boolean(2) is true.
+15. Strict equality === needs both side have the same type, and equality == allows different type to be compared through value convertion.
+16. in part2-question16.js
+17. Result : [2,4,6]
+    
+    First, modifyArray would iterate through the array, and push the return value of the callback function.
+
+    Second, passing doSomething into callback parameter, now the callback function return the double of the original array value and push it to the newArr. 
