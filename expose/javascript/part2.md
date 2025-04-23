@@ -36,3 +36,11 @@
     First, modifyArray would iterate through the array, and push the return value of the callback function.
 
     Second, passing doSomething into callback parameter, now the callback function return the double of the original array value and push it to the newArr. 
+18. in .js
+19. Result: 1
+
+    3
+
+    4
+    
+    2
